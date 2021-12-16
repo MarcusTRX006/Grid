@@ -1,0 +1,40 @@
+::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+        padding: 20px;
+        margin: 20px; 
+} 
+
+.container {
+    background: #eee;
+    height: auto;
+    width: 100%;
+    margin: 40px 40px;
+   
+
+    display: grid;
+    grid-gap: 30px;
+
+    grid-template-rows: [header-start]150px[header-end]150px;
+    /* grid-template-columns: 150px 150px 150px; */
+    /* grid-template-rows: repeat (2, 1fr); */
+    grid-template-columns: repeat (3, 150px);
+    /* grid-template-columns: 1fr 1fr 1fr;  */
+
+    /* grid-column-gap: 30px;
+    grid-row-gap: 10px; */ 
+}
+/* fractioned unit  */
+.items {
+    padding: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
